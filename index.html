@@ -1,3 +1,5 @@
+<!-- Something is wierd with the divs in this -->
+
 <!DOCTYPE HTML>
 <!--
 	Dimension by HTML5 UP
@@ -5,7 +7,9 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
+
 	<head>
+
 		<title>BHyman Analytics</title>
 		<meta name="author" content="Brent Hyman">
 		<meta charset="utf-8" />
@@ -13,162 +17,183 @@
 		<meta name="google-site-verification" content="Xp71k_cfq8Dr1b8D8JYvqfuL4YwM9szHTvlvSjaNRC0" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
 	</head>
+
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<!-- <div class="logo">
-							<span class="fas fa-globe" style='font-size:24px'></span>
-						</div> -->
-						<div class="content">
-							<div class="inner">
-								<h1>Bhyman Analytics</h1>
-								<p>A site focused on Data Science and Automation</p>
+			<!-- Header -->
+			<header id="header">
+				<!-- <div class="logo">
+					<span class="fas fa-globe" style='font-size:24px'></span>
+				</div> -->
+				<div class="content">
+					<div class="inner">
+						<h1>Bhyman Analytics</h1>
+						<p>A site focused on Data Science and Automation</p>
+					</div>
+				</div>
+				<nav>
+					<ul>
+						<!-- <li><a href="#intro">Intro</a></li> -->
+						<li><a href="#about">About</a></li>
+						<!-- <li><a href="#algoTrading">Algo Trading</a></li> -->
+						<li><a href="#work">Work</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<!--<li><a href="#elements">Elements</a></li>-->
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Main -->
+			<div id="main">
+
+				<!-- About -->
+				<article id="about">
+					<h2 class="major">About</h2>
+					<span class="image main"><img src="images/pic 4 about article.jpg" alt="" /></span>
+					<p>Hello, and welcome to BHyman Analytics! I want to develop and leverage computational software and automation in order to solve real world problems.</p>
+					<p>I love software development and scripting within the realm of data and automation. Data science is all about utilizing the power of computing to guide decisioning. And automation allows for the elimination of boring, yet necessary work so that people can shift their focus toward creativity and progress. It's an exciting revolution! One that I'm proud to be a part of.</p>
+					<p>Hope you enjoy this website! It's my space where I can put my work on display.</p>
+				</article>
+
+				<!-- Algo Trading - Was thinking about having Algo trading as it's own articls -->
+				<!-- <article id="algoTrading">
+					<h2 class="major">Algo Trading</h2>
+					<span class="image main"><img src="#" alt="" /></span>
+					<p>...</p>
+				</article> -->
+
+				<!-- Work -->
+				<article id="work">
+
+					<h2 class="major">Work</h2>
+					<span class="image main"><img src="images/pic 4 work article.jpg" alt="" /></span>
+
+					<section>
+
+						<h1>Coronavirus</h1>
+						<p>
+							If you want to monitor the US numbers on Coronavirus, you could simply just google <a href="https://www.google.com/search?q=state+by+state+coronavirus+cases" target="_blank">state by 
+							state coronavirus cases</a>. I also really like the analysis in <a href = "https://covid19-projections.com/" target="_blank">covid19-projections.com</a>. And of course, there's the 
+							<a href = "https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6" target="_blank">Johns Hopkins University heat map</a>.</p>
+						<p>I couldn't easily find line charts on daily new cases by county in the US. So I decided to build them on on my own.</p>
+						<ul style="list-style-type:disc;">
+							<li><a href = "https://covid-by-county.herokuapp.com/">Covid by County (Flask App on Heroku)</a></li>
+						</ul>
+						<p>I gathered data from the COVID-19 <a href = "https://github.com/CSSEGISandData/COVID-19" target="_blank">repo</a> owned by the CSSE at Johns Hopkins University.</p>
+						<!-- Talk about how the data is automatically updated -->
+
+					</section>
+
+					<section>
+
+						<h1>Exploratory Research</h1>
+
+						<h2>PDF Table Parsing</h2>
+						<p>As an avid Colorado outdoorsman, I wanted to pull some data from the <a href="https://cpw.state.co.us/thingstodo/Pages/Statistics-Deer.aspx" target="_blank">deer statistics</a> page on the CPW web site. I wrote
+						a scraper to pull population estimates from 2010 to 2019. And then I plotted that data over time for each data analysis unit (DAU).
+						The data was pulled from those PDFs via a tool called <a href="https://github.com/chezou/tabula-py" target="_blank">tabula-py</a></p>
+						<ul style="list-style-type:disc;">
+							<li><a href="https://co-deer-population-estimates.herokuapp.com/">Deer Population Estimates - CO</a></li>
+						</ul>
+						
+						<h2>OCR and IDP</h2>
+						<p>Optical Character Recognition and Intelligent Document Processing...</p>
+						<ul style="list-style-type:disc;">
+							<li><a href = "https://bhyman67.github.io/Receipt-OCR/">Receipt-OCR</a></li>
+						</ul>
+
+					</section>
+
+					<section>
+
+						<h1>Algo Trading</h1>
+						<p>
+							Algorithmic trading is all about automating trades on the stock market. It’s a computerized trading system that can use variables such as price, timing, 
+							and volume in order to automatically make trades. And the more exciting piece is that you can develop logic using ML. Trade decisions that are both 
+							automated and computer informed… The fun part is in building that bot…
+						</p>
+						<p>
+							Currently I’m in the early stage of this field. My scripts are pretty trivial right now. And my focus is on basic analysis. But in due time, I’m 
+							hoping to approach expert status on this exciting topic. 
+						</p>
+						<ul style="list-style-type:disc;">
+							<li><a href = "https://bhyman67.github.io/OHLC-Data/">OHLC Data Analysis</a></li>
+							<li><a href = "https://bhyman67.github.io/DJIA-Variability/">DJIA Variability</a></li>
+							<!-- <li>Milk</li> -->
+						</ul>
+
+					</section>
+
+					<section>
+
+						<h1>NREL Data Analysis</h1>
+						<p>I’m interested in learning more about renewable energy from a data perspective. I was excited to find the <a href = "https://developer.nrel.gov/" >NREL developer network</a> online. And so I’m currently working on analyzing that info. Just to learn more about the field…</p>
+						<ul style="list-style-type:disc;">
+							<li><a href = "https://github.com/bhyman67/City-Energy-Usage">City Energy Usage Data</a></li>
+							<!-- <li>Tea</li> -->
+							<!-- <li>Milk</li> -->
+						</ul>
+
+					</section>
+					
+				</article>
+
+				<!-- Contact -->
+				<article id="contact">
+					<h2 class="major">Contact</h2>
+					Note, this messaging system doesn't work quite yet.
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field half">
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" />
+							</div>
+							<div class="field half">
+								<label for="email">Email</label>
+								<input type="text" name="email" id="email" />
+							</div>
+							<div class="field">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" rows="4"></textarea>
 							</div>
 						</div>
-						<nav>
-							<ul>
-								<!-- <li><a href="#intro">Intro</a></li> -->
-								<li><a href="#about">About</a></li>
-								<!-- <li><a href="#algoTrading">Algo Trading</a></li> -->
-								<li><a href="#work">Work</a></li>
-								<li><a href="#contact">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
-							</ul>
-						</nav>
-					</header>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- About -->
-						<article id="about">
-							<h2 class="major">About</h2>
-							<span class="image main"><img src="images/pic 4 about article.jpg" alt="" /></span>
-							<p>Hello, and welcome to BHyman Analytics! I want to develop and leverage computational software and automation in order to solve real world problems.</p>
-							<p>I love software development and scripting within the realm of data and automation. Data science is all about utilizing the power of computing to guide decisioning. And automation allows for the elimination of boring, yet necessary work so that people can shift their focus toward creativity and progress. It's an exciting revolution! One that I'm proud to be a part of.</p>
-							<p>Hope you enjoy this website! It's my space where I can put my work on display.</p>
-						</article>
-
-						<!-- Algo Trading -->
-						<article id="algoTrading">
-							<h2 class="major">Algo Trading</h2>
-							<span class="image main"><img src="#" alt="" /></span>
-							<p>...</p>
-						</article>
-
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic 4 work article.jpg" alt="" /></span>
-								<section>
-									<h1>Coronavirus</h1>
-									<p>
-										If you want to monitor the US numbers on Coronavirus, you could simply just google <a href="https://www.google.com/search?q=state+by+state+coronavirus+cases" target="_blank">state by 
-										state coronavirus cases</a>. I also really like the analysis in <a href = "https://covid19-projections.com/" target="_blank">covid19-projections.com</a>. And of course, there's the 
-										<a href = "https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6" target="_blank">Johns Hopkins University heat map</a>.</p>
-									<p>I couldn't easily find line charts on daily new cases by county in the US. So I decided to build them on on my own.</p>
-									<ul style="list-style-type:disc;">
-										<li><a href = "https://covid-by-county.herokuapp.com/">covid by county (Flask App on Heroku)</a></li>
-									</ul>
-									<p>I gathered data from the COVID-19 <a href = "https://github.com/CSSEGISandData/COVID-19" target="_blank">repo</a> owned by the CSSE at Johns Hopkins University.</p>
-									<!-- I used Heroku and automated the data update -->
-								</section>
-								<section>
-									<h1>OCR and IDP</h1>
-									<p>Optical Character Recognition and Intelligent Document Processing...</p>
-									<ul style="list-style-type:disc;">
-										<li><a href = "https://bhyman67.github.io/Receipt-OCR/">Receipt-OCR</a></li>
-									</ul>
-								</section>
-								<section>
-									<h1>Algo Trading</h1>
-									<p>
-										Algorithmic trading is all about automating trades on the stock market. It’s a computerized trading system that can use variables such as price, timing, 
-										and volume in order to automatically make trades. And the more exciting piece is that you can develop logic using ML. Trade decisions that are both 
-										automated and computer informed… The fun part is in building that bot…
-									</p>
-									<p>
-										Currently I’m in the early stage of this field. My scripts are pretty trivial right now. And my focus is on basic analysis. But in due time, I’m 
-										hoping to approach expert status on this exciting topic. 
-									</p>
-									<ul style="list-style-type:disc;">
-										<li><a href = "https://bhyman67.github.io/OHLC-Data/">OHLC Data Analysis</a></li>
-										<li><a href = "https://bhyman67.github.io/DJIA-Variability/">DJIA Variability</a></li>
-										<!-- <li>Milk</li> -->
-									</ul>
-								</section>
-								<section>
-									<h1>NREL Data Analysis</h1>
-									<p>I’m interested in learning more about renewable energy from a data perspective. I was excited to find the <a href = "https://developer.nrel.gov/" >NREL developer network</a> online. And so I’m currently working on analyzing that info. Just to learn more about the field…</p>
-									<ul style="list-style-type:disc;">
-										<li><a href = "https://github.com/bhyman67/City-Energy-Usage">City Energy Usage Data</a></li>
-										<!-- <li>Tea</li> -->
-										<!-- <li>Milk</li> -->
-									</ul>
-								</section>
-								<!-- <section>
-									<h1>Projects from when I was in college</h1>
-									<section>Project 1</section>
-									<p>Another section goes here..</p>
-									<section>Project 2</section>
-								</section> -->
-							</article>
-
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								Note, this messaging system doesn't work quite yet.
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-								<ul class="icons">
-									<li><a href="https://medium.com/@brent.c.hyman" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
-									<li><a href="https://www.youtube.com/channel/UC1-bhtk_IJQ4wMoOZC69vBA?view_as=subscriber" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
-									<li><a href="https://github.com/bhyman67" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="https://www.linkedin.com/in/brent-hyman-72b479116" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								</ul>
-							</article>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" class="primary" /></li>
+							<li><input type="reset" value="Reset" /></li>
+						</ul>
+					</form>
+					<ul class="icons">
+						<li><a href="https://medium.com/@brent.c.hyman" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
+						<li><a href="https://www.youtube.com/channel/UC1-bhtk_IJQ4wMoOZC69vBA?view_as=subscriber" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+						<li><a href="https://github.com/bhyman67" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://www.linkedin.com/in/brent-hyman-72b479116" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					</ul>
+				</article>
 
 			</div>
 
+			<!-- Footer -->
+			<footer id="footer">
+				<p class="copyright">&copy; Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+			</footer>
+
+		</div>
+
 		<!-- BG -->
-			<div id="bg"></div>
+		<div id="bg"></div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
+
 </html>
